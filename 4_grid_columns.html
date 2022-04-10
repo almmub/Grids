@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="CWeb 1010">
+	<meta name="keywords" content="grids">
+	<meta name="author" content="Mubarek Al-Mutawa">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Grid Columns</title>
+	
+	<style>
+		.grid-container {
+			display: grid;
+			width: 800px;
+			grid-template-columns: 40px auto auto 40px;
+			grid-template-rows: 80px 200px;
+			background-color: #17df8f;
+			padding: 10px;
+			grid-gap: 40px;
+		}
+
+		.grid-container > div {
+			background-color: #b9883b;
+			text-align: center;
+			padding 20px 0;
+			font-size: 35px;
+			box-shadow: 10px 10px #12b272;
+		}
+		
+			@media only screen and (max-width: 600px) {
+			body {
+				background-color: #66CC00;
+			}
+	
+			.grid-container {background-color: #cc0066; }
+			h1, p {color: black;}
+			
+			}
+	
+	
+	</style>
+	
+
+</head>
+
+<body>
+
+	<h1>Grid Columns</h1>
+	
+	<div class="grid-container">
+	
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+	</div>
+
+
+
+</body>
+</html>

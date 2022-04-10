@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="CWeb 1010">
+	<meta name="keywords" content="grids">
+	<meta name="author" content="Mubarek Al-Mutawa">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Grid Columns property 2</title>
+	
+	<style>
+		.grid-container {
+			display: grid;
+			grid-template-columns: auto auto auto auto auto auto;
+			grid-template-rows: 80px 200px;
+			grid-gap: 10px;
+			background-color: #9e660f;
+			padding: 10px;
+			grid-column-start: span 4;
+		}
+
+		.grid-container > div {
+			background-color: #17df8f;
+			text-align: center;
+			padding 20px 0;
+			font-size: 35px;
+		}
+	
+		.item1 {
+			grid-column: 1 / 5;
+		}
+	
+		@media only screen and (max-width: 600px) {
+			.item1 {
+				background-color: #2C0552;
+			}
+	
+			.grid-container {background-color: #BE1825; }
+			h1, p {color: black;}
+			
+			}
+	
+	</style>
+	
+
+</head>
+
+<body>
+
+	<h1>Grid Columns property 2</h1>
+	
+	<div class="grid-container">
+	
+		<div class="item1">1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+	</div>
+
+
+
+</body>
+</html>

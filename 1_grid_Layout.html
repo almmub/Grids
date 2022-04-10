@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="CWeb 1010 Lab 3">
+	<meta name="keywords" content="grids">
+	<meta name="author" content="Mubarek Al-Mutawa">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title></title>
+	
+	<style>
+	
+		.item1 { grid-area: header; }
+		.item2 { grid-area: menu; }
+		.item3 { grid-area: main; }
+		.item4 { grid-area: right; }
+		.item5 { grid-area: footer; }
+		
+		.grid-container{
+			display: grid;
+			grid-template-areas:
+				'header header header header right'
+				'menu main main main right'
+				'menu footer footer footer right';
+				
+			gap: 10px;
+			background-color: #c20a20;
+			padding: 10px;
+		}
+		
+		.grid-container > div {
+			background-color: rgba(255,255,2555,0.8);
+			text-align: center;
+			padding: 20px 0;
+			font-size: 30px;
+			}
+	
+		.item1{
+			background-image: url("images/background1.jpg");
+			color: white;
+			text-align: center;
+		}
+		
+		.item2{
+			background-image: url("images/space_ghost.jpg");
+			color: red;
+			text-align: center;
+		}
+		
+		.item4{
+			background-image: url("images/cosplaysp.jpg");
+			color: white;
+			text-align: center;
+		}
+		
+		@media only screen and (max-width: 600px) {
+			body {
+				background-color: #AEDFC0;
+			}
+	
+			.grid-container {background-color: #688573; }
+			h1, p {color: black;}
+			
+			}
+	
+		
+	</style>
+	
+</head>
+
+<body>
+	<h1>Grid Layout</h1>
+	
+	<p>This grid layout contains six columns and three rows</p>
+	
+	<div class="grid-container">
+		<div class="item1">Header</div>
+		<div class="item2">Menu</div>
+		<div class="item3">Main</div>
+		<div class="item4">Right</div>
+		<div class="item5">Footer</div>
+	</div>
+
+
+</body>
+</html>

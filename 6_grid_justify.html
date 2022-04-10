@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="CWeb 1010">
+	<meta name="keywords" content="grids">
+	<meta name="author" content="Mubarek Al-Mutawa">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>grid-justify</title>
+	
+	<style>
+	
+		.grid-container {
+			display: grid;
+			height: 400px;
+			justify-content: space-evenly;
+			/*justify-content: space-around;*/
+			align-content: center;
+			grid-template-columns: 100px 100px 100px;
+			grid-template-rows: 100px 100px 100px;
+			grid-row-gap: 50px;
+			background-image: linear-gradient(#c7da28, #17df8f);
+			padding: 50px;
+		}
+
+		.grid-container > div {
+			background-color: #b9883b;
+			text-align: center;
+			padding: 20px;
+			font-size: 35px;
+			outline: #764f13 solid 10px;
+			box-shadow: 20px 30px 20px;
+		}
+	
+			@media only screen and (max-width: 600px) {
+			body {
+				background-color: #FF8243;
+			}
+	
+			.grid-container {background-color: #BE1825; }
+			h1, p {color: white;}
+			
+			}
+	
+	</style>
+</head>
+
+<body>
+	<h1>grid-justify</h1>
+	
+	<div class="grid-container">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>	
+	</div>
+</body>
+</html>
